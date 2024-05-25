@@ -33,6 +33,6 @@ class BasePath():
         """ 드라이브 루트 경로
         """
         if self.backend is GDRIVE_BACKEND:
-            mount = 'MyDrive'
+            drive_name = 'MyDrive'
 
-        return os.path.join(self.mount_dir, mount)
+        return os.path.join(self.mount_dir, drive_name)
